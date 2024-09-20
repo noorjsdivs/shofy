@@ -40,4 +40,12 @@ export interface ProductType {
   title: string;
   warrantyInformation: string;
   weight: number;
+  quantity?: number;
+}
+
+export interface StateType {
+  shofy: {
+    cart: ProductType[];
+    favorite: ProductType[];
+  };
 }

@@ -21,6 +21,7 @@ const config = {
       colors: {
         darkBg: "#010f1c",
         themeColor: "#0c55aa",
+        skyColor: "#0989ff",
         themeWhite: "#ffffff",
         lightBg: "#F4F7F9",
         darkYellow: "#FFB21D",

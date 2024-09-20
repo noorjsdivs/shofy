@@ -7,6 +7,7 @@ import { HiOutlineShoppingBag } from "react-icons/hi";
 import { MdFavoriteBorder } from "react-icons/md";
 import Container from "../Container";
 import SearchInput from "../SearchInput";
+import HeaderIcon from "./HeaderIcon";
 
 const MiddleHeader = async () => {
   const session = await auth();
@@ -51,18 +52,7 @@ const MiddleHeader = async () => {
               </div>
             </Link>
           )}
-          <Link href={"/favorite"} className="relative">
-            <MdFavoriteBorder className="text-2xl" />
-            <span className="w-4 h-4 text-[10px] font-semibold bg-themeColor text-themeWhite inline-flex items-center justify-center rounded-full absolute -top-1 -right-1">
-              0
-            </span>
-          </Link>
-          <Link href={"/cart"} className="relative">
-            <HiOutlineShoppingBag className="text-2xl" />
-            <span className="w-4 h-4 text-[10px] font-semibold bg-themeColor text-themeWhite inline-flex items-center justify-center rounded-full absolute -top-1 -right-1">
-              0
-            </span>
-          </Link>
+          <HeaderIcon />
         </div>
       </Container>
     </div>
